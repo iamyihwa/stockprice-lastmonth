@@ -1,0 +1,24 @@
+<!doctype html>
+
+<title>A stockmarket summary</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_sp.css')}}'>
+<div class=page>
+  <h1>A question </h1>
+  <div class=metanav>
+
+<h4>
+You will be asked which company's information you would like to hear about.
+Please give the name of the company. (eg. GOOG, FB, AAPL etc.)
+</h4>
+
+<form id='userform_sp' method='post' action='index_sp' > <!-- action is the URL you want to move to next-->
+   <p>
+   Name of company : <input type='text' name='name_comp' />
+   </p>
+   <p>
+   <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+   </p>
+</form>
+
+</div>
+</div>
